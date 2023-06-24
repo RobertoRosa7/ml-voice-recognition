@@ -18,4 +18,4 @@ COPY . .
 # RUN pip install -r requirements.txt
 
 # Runner
-CMD [ "python", "--version" ]
+CMD [ "python", "server.py" ]

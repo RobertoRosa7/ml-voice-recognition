@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow.keras as keras
 from sklearn.model_selection import train_test_split
 
-DATA_PATH = os.path.join("data.json")
+DATA_PATH = os.path.join("..data", "data.json")
 SAVED_MODEL_PATH = os.path.join("../flask/model.h5")
 
 LEARNING_RATE = 0.0001

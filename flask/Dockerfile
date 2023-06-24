@@ -12,7 +12,7 @@ COPY . .
 # install audio libraries
 # RUN apt-get update && apt-get install -y libsndfile1 libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 ffmpeg
 
-# RUN pip install --upgrade pip
+RUN pip install --upgrade pip
 
 # install python packages
 RUN pip install -r requirements.txt

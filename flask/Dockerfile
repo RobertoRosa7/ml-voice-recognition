@@ -15,4 +15,4 @@ RUN pip install --upgrade pip
 # install python packages
 RUN pip install -r requirements.txt
 
-CMD [ "python", "server.py" ]
+ENTRYPOINT [ "python", "server.py" ]

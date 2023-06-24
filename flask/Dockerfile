@@ -1,5 +1,7 @@
 # IMAGE
-FROM tensorflow/tensorflow:2.12.0
+FROM python:3.8
+
+LABEL Maintainer="Roberto Rosa"
 
 # Set working space directory
 WORKDIR /app
@@ -15,4 +17,5 @@ RUN pip install --upgrade pip
 # install python packages
 RUN pip install -r requirements.txt
 
-ENTRYPOINT [ "python", "server.py" ]
+# Runner
+CMD [ "python", "./server.py" ]

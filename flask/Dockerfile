@@ -15,7 +15,7 @@ COPY . .
 # RUN pip install --upgrade pip
 
 # install python packages
-# RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Runner
 CMD [ "python", "server.py" ]

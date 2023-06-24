@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # install audio libraries
-RUN apt-get update && apt-get install -y libsndfile1 libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 ffmpeg libav-tools
+RUN apt-get update && apt-get install -y libsndfile1 libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 ffmpeg
 
 RUN pip install --upgrade pip
 

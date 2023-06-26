@@ -1,5 +1,5 @@
 # IMAGE
-FROM python:3.8
+FROM tensorflow/tensorflow:2.12.0
 
 LABEL Maintainer="Roberto Rosa"
 
@@ -16,8 +16,6 @@ RUN pip install --upgrade pip
 
 # install python packages
 RUN pip install -r requirements.txt
-RUN pwd
-RUN ls
 
 
 # Runner

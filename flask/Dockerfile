@@ -21,4 +21,3 @@ RUN ls
 
 
 # Runner
-CMD [ "python", "server.py" ]

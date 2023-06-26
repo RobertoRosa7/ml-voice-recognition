@@ -1,5 +1,6 @@
 # IMAGE
-FROM tensorflow/tensorflow:2.12.0
+# FROM tensorflow/tensorflow:2.12.0
+FROM python:3.8-slim-buster
 
 # Set working space directory
 WORKDIR /app
@@ -17,3 +18,4 @@ RUN pip install --upgrade pip
 
 
 # Runner
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]

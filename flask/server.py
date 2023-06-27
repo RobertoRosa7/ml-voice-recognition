@@ -48,4 +48,4 @@ def audi_blob():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", ssl_context=('certificate.pem', 'privatekey.pem'))
+    app.run(debug=True, host="0.0.0.0", ssl_context=('certs/certificate.pem', 'certs/privatekey.pem'))
